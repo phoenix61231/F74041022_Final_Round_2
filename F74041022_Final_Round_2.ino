@@ -1,15 +1,15 @@
 #include <Ultrasonic.h>
 #include <BRCClient.h>
-#define front_trig 22
-#define front_echo 32
-#define left_trig 28
-#define left_echo 30
+#define front_trig 26 
+#define front_echo 27 
+#define left_trig 22
+#define left_echo 23
 #define right_trig 24
-#define right_echo 26
-#define motor_right_back 6
-#define motor_right_for 3
-#define motor_left_back 4
-#define motor_left_for 5
+#define right_echo 25
+#define motor_right_back 3
+#define motor_right_for 4
+#define motor_left_back 5
+#define motor_left_for 6
 
 #define front_dir 0
 #define left_dir 1
