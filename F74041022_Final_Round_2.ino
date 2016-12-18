@@ -18,8 +18,8 @@
 #define UART_RX 10
 #define UART_TX 2
 
-#define AP_SSID    "PoPo"
-#define AP_PASSWD  "07270727"
+#define AP_SSID    "Test_Server_AP"
+#define AP_PASSWD  "testserverap"
 #define TCP_IP     "192.168.43.1"
 
 //#define AP_SSID    "programtheworld"
@@ -112,6 +112,8 @@ void loop() {
       }
       else if(msg.type==MSG_ROUND_END){
         brcClient.endBRCClient();
+        go=false;
+        back = false;        
       }
   }
   //紀錄路徑
@@ -247,7 +249,7 @@ void loop() {
     }
   }
   else if(back==true){
-     brcClient.sendToClient(PARTNER_COMM_ID, "GO");
+     brcClient.sendToClient(PARTNER_COMM_ID,"go!");
      back=false;   
   }
 }
