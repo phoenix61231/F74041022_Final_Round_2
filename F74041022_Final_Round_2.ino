@@ -112,8 +112,7 @@ void loop() {
       }
       else if(msg.type==MSG_ROUND_END){
         brcClient.endBRCClient();
-        go=false;
-        back = false;        
+        go=false;       
       }
   }
   //紀錄路徑
@@ -127,8 +126,6 @@ void loop() {
       mapping_front++;
     }
   }  
-  //go=true;
-  
   //不合理
   /*if(front_dis>500 || right_dis>500 || left_dis>500){
     front_sta = true;
@@ -237,8 +234,7 @@ void loop() {
                 //mapping_cross++;
                 break;
               case false:
-                //FFF
-                for_back(motor_right_for,motor_left_back,540);
+                //FFF                
                 back = true;
                 go = false;
                 break;
